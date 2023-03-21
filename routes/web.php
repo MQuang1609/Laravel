@@ -41,6 +41,20 @@ Route::get('product', [ProductController::class, 'getAllProduct']);
 
 Route::get('product/detail/{id}', [ProductController::class, 'getDetail']);
 
+
+Route::get('/home', function () {
+    return view('home');
+})->name('home');
+Route::get('/contact', function () {
+    return view('contact');
+})->name('contact');
+Route::get('/product-detail', function () {
+    return view('product-detail');
+})->name('product-detail');
+
+Route::get('/aboutUs', function () {
+    return view('aboutUs');
+})->name('aboutUs');
 // Route::get('product', function () {
 //     $arr = [1, 2, 3];
 //     $a = 1;
